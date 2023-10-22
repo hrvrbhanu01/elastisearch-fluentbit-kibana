@@ -47,7 +47,7 @@ spec:
       terminationGracePeriodSeconds: 30
       dnsPolicy: ClusterFirst
       nodeSelector:
-        node-type: Your_node_Info
+        eks.amazonaws.com/nodegroup: chikitsa-test-nodes	
       securityContext: {}
       schedulerName: default-scheduler
   strategy:
